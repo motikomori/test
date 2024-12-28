@@ -1,0 +1,280 @@
+.pageContainer {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #4a4a4a; /* Тёмно-серый текст */
+  background-color: #ffffff; /* Бежевый фон */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #d1e8e2; /* Светло-зелёный фон */
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbarMenu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.navbarLink {
+  color: #4a4a4a;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbarLink:hover {
+  background-color: #b2c4b9; /* Тёмно-зелёный оттенок */
+  color: #fff;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  background-color: #d1e8e2;
+  padding: 30px 20px;
+  color: #4a4a4a;
+}
+
+.bannerImage {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bannerContent {
+  margin-top: 20px;
+}
+
+.bannerTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.bannerSubtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+}
+
+.sectionDescription {
+  font-size: 1.2rem;
+  color: #7a7a7a;
+  margin-bottom: 30px;
+}
+
+.footer {
+  background-color: #d1e8e2;
+  color: #4a4a4a;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+.carouselContainer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carouselTrack {
+  display: flex;
+  animation: scroll-left 15s linear infinite;
+}
+
+.carouselImage {
+  width: 200px; 
+  height: auto;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+
+
+.titleContainer {
+  background-color: #d1e8e2; /* Цвет как у навбара */
+  padding: 20px;
+  border-radius: 8px; /* Опционально, для визуальной мягкости */
+  text-align: center;
+}
+
+
+
+
+
+
+
+.cardTitle {
+  font-size: 1.8rem;
+  margin: 20px 0 10px 0;
+}
+
+.cardDescription {
+  font-size: 1.2rem;
+  color: #7a7a7a;
+  margin-bottom: 30px;
+}
+
+/* Контейнер для изображения */
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+/* Стили для изображения */
+.cardImage {
+  max-width: 80%; /* Занимает 80% ширины контейнера */
+  height: auto; /* Сохраняет пропорции */
+  border-radius: 12px; /* Закруглённые углы */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Тень для изображения */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* Позволяет карточкам переноситься на следующую строку */
+  justify-content: space-between; /* Пространство между карточками */
+  gap: 20px; /* Расстояние между карточками */
+  max-width: 300px; /* Ограничение ширины контейнера */
+  margin: 0 auto; /* Центрирование контейнера */
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 20px); /* Три карточки в ряд, с учётом gap */
+  max-width: calc(33.333% - 20px); /* Учитываем gap между карточками */
+  background-color: #fff; /* Белый фон карточки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+  border-radius: 8px; /* Скругление углов */
+  overflow: hidden; /* Скрываем всё, что выходит за границы */
+  text-align: center; /* Центрирование контента */
+  padding: 15px; /* Внутренние отступы */
+  box-sizing: border-box; /* Включаем padding в расчёт размеров */
+}
+
+.cardImage {
+  width: 100%; /* Занимает всю ширину карточки */
+  height: 200px; /* Фиксированная высота */
+  object-fit: cover; /* Сохраняет пропорции изображения */
+  border-radius: 8px; /* Скругление углов */
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #4a4a4a;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: #7a7a7a;
+  margin-bottom: 10px;
+}
+
+
+/* Контейнер для карточек */
+.memeCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Равномерное распределение карточек по ширине */
+  gap: 20px; /* Отступы между карточками */
+  max-width: 960px; /* Ограничиваем максимальную ширину контейнера */
+  margin: 0 auto; /* Центруем контейнер на странице */
+}
+
+.memeCard {
+  width: 300px; /* Фиксированная ширина для каждой карточки */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.memeCardImage {
+  width: 100%; /* Изображение растягивается по ширине карточки */
+  height: 200px; /* Фиксированная высота для изображения */
+  object-fit: cover; /* Сохраняет пропорции изображения */
+  border-radius: 8px 8px 0 0; /* Закругленные углы сверху */
+}
+
+.memeCardTitle {
+  font-size: 1.8rem;
+  margin: 15px 0 10px;
+}
+
+.memeCardDescription {
+  font-size: 1.2rem;
+  color: #7a7a7a;
+  margin-bottom: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .memeCardContainer {
+    justify-content: center; /* Центруем карточки на средних экранах */
+    gap: 15px; /* Уменьшаем отступы */
+  }
+}
+
+@media (max-width: 768px) {
+  .memeCard {
+    width: 100%; /* На мобильных одна карточка на всю ширину */
+  }
+}
+
+
+
+
+/* Стили для картинки на странице подробной информации */
+.fullInfoCardImage {
+  width: 50%; /* Уменьшаем картинку до 50% от контейнера */
+  height: 400px; /* Сохраняем пропорции */
+  object-fit: cover; /* Чтобы изображение не искажалось */
+  border-radius: 12px; /* Закругляем углы */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+  margin: 20px auto; /* Центрируем изображение */
+  display: block; /* Чтобы изображение было блочным элементом */
+}
+
+
+
+

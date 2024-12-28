@@ -1,0 +1,126 @@
+/* card.module.css */
+
+.card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* page.module.css */
+
+/* Навбар */
+.navbar {
+  background-color: #ff7f00; /* Оранжевый фон */
+  padding: 10px 20px;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbarMenu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbarMenu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbarMenu a:hover {
+  color: #00aaff; /* Голубой цвет при наведении */
+}
+
+/* Заголовки */
+.titleContainer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Контейнер для карточек */
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Футер */
+.footer {
+  text-align: center;
+  background-color: #ff7f00;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+}
